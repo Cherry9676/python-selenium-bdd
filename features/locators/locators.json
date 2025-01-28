@@ -1,0 +1,7 @@
+{
+    "loginPage": {
+        "usernameField": "id:username",
+        "passwordField": "id:password",
+        "loginButton": "xpath://button[@type='submit']"
+    }
+}

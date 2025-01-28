@@ -1,0 +1,86 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "User Login",
+    "tags": [],
+    "location": "features/tests/sample_test.feature:1",
+    "status": "passed",
+    "elements": [
+      {
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Successful Login with Valid Credentials",
+        "tags": [],
+        "location": "features/tests/sample_test.feature:3",
+        "steps": [
+          {
+            "keyword": "Given",
+            "step_type": "given",
+            "name": "I open the login page",
+            "location": "features/tests/sample_test.feature:4",
+            "match": {
+              "location": "features/steps/test_steps.py:4",
+              "arguments": []
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0.9561758041381836
+            }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "I enter \"testuser\" and \"password\"",
+            "location": "features/tests/sample_test.feature:5",
+            "match": {
+              "location": "features/steps/test_steps.py:9",
+              "arguments": [
+                {
+                  "value": "testuser",
+                  "name": "username"
+                },
+                {
+                  "value": "password",
+                  "name": "password"
+                }
+              ]
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0.0
+            }
+          },
+          {
+            "keyword": "And",
+            "step_type": "when",
+            "name": "I click on login button",
+            "location": "features/tests/sample_test.feature:6",
+            "match": {
+              "location": "features/steps/test_steps.py:15",
+              "arguments": []
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0.0010099411010742188
+            }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "I should see the dashboard",
+            "location": "features/tests/sample_test.feature:7",
+            "match": {
+              "location": "features/steps/test_steps.py:20",
+              "arguments": []
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2.001194715499878
+            }
+          }
+        ],
+        "status": "passed"
+      }
+    ]
+  }
+]

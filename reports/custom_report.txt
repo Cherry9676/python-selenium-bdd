@@ -1,0 +1,4 @@
+Step PASSED: I open the login page
+Step PASSED: I enter "testuser" and "password"
+Step PASSED: I click on login button
+Step PASSED: I should see the dashboard
