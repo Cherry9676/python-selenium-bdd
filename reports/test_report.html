@@ -1,0 +1,80 @@
+<html><head><title>Test Report</title><style>
+            body { font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; }
+            h1 { text-align: center; color: #333; }
+            h2 { text-align: center; color: #333; font-size: 24px; }
+            table { width: 100%; border-collapse: collapse; background: white; box-shadow: 0px 0px 10px #ccc; }
+            th, td { padding: 10px; text-align: left; border-bottom: 1px solid #ddd; }
+            th { background-color: #333; color: white; }
+            tr:hover { background-color: #f1f1f1; }
+            .passed { color: green; font-weight: bold; }
+            .failed { color: red; font-weight: bold; }
+            .expandable { cursor: pointer; background: #e0e0e0; padding: 8px; font-weight: bold; }
+            .scenario-steps { display: none; }
+        </style><script>
+            function toggleScenario(id) {
+                var rows = document.querySelectorAll(`#${id}`);
+                rows.forEach(function(row) {
+                    row.style.display = row.style.display === 'table-row' ? 'none' : 'table-row';
+                });
+            }
+        </script></head><body><h1>Automation Test Report</h1><table>
+            <tr><th onclick="toggleScenario('steps-all')">Scenario</th><th>Status</th><th>Screenshot</th></tr>
+        <h2>Feature: User Login</h2>
+        <tr class="expandable" onclick="toggleScenario('steps-Successful_Login_with_Valid_Credentials')">
+            <td colspan="3">Successful Login with Valid Credentials</td>
+        </tr>
+        <tbody id="steps-Successful_Login_with_Valid_Credentials" class="scenario-steps">
+        
+        <tr>
+            <td>I open the login page</td>
+            <td class="passed">PASSED</td>
+            <td><a href='screenshots/I_open_the_login_page_20250129_085718.png' target='_blank'><img src='screenshots/I_open_the_login_page_20250129_085718.png' width='100'></a></td>
+        </tr>
+        
+        <tr>
+            <td>I enter "testuser" and "password"</td>
+            <td class="passed">PASSED</td>
+            <td><a href='screenshots/I_enter_"testuser"_and_"password"_20250129_085719.png' target='_blank'><img src='screenshots/I_enter_"testuser"_and_"password"_20250129_085719.png' width='100'></a></td>
+        </tr>
+        
+        <tr>
+            <td>I click on login button</td>
+            <td class="passed">PASSED</td>
+            <td><a href='screenshots/I_click_on_login_button_20250129_085719.png' target='_blank'><img src='screenshots/I_click_on_login_button_20250129_085719.png' width='100'></a></td>
+        </tr>
+        
+        <tr>
+            <td>I should see the dashboard</td>
+            <td class="passed">PASSED</td>
+            <td><a href='screenshots/I_should_see_the_dashboard_20250129_085721.png' target='_blank'><img src='screenshots/I_should_see_the_dashboard_20250129_085721.png' width='100'></a></td>
+        </tr>
+        </tbody>
+        <tr class="expandable" onclick="toggleScenario('steps-Successful_Login_with_inValid_Credentials')">
+            <td colspan="3">Successful Login with inValid Credentials</td>
+        </tr>
+        <tbody id="steps-Successful_Login_with_inValid_Credentials" class="scenario-steps">
+        
+        <tr>
+            <td>I open the login page</td>
+            <td class="passed">PASSED</td>
+            <td><a href='screenshots/I_open_the_login_page_20250129_085730.png' target='_blank'><img src='screenshots/I_open_the_login_page_20250129_085730.png' width='100'></a></td>
+        </tr>
+        
+        <tr>
+            <td>I enter "testuser" and "password"</td>
+            <td class="passed">PASSED</td>
+            <td><a href='screenshots/I_enter_"testuser"_and_"password"_20250129_085730.png' target='_blank'><img src='screenshots/I_enter_"testuser"_and_"password"_20250129_085730.png' width='100'></a></td>
+        </tr>
+        
+        <tr>
+            <td>I click on login button</td>
+            <td class="passed">PASSED</td>
+            <td><a href='screenshots/I_click_on_login_button_20250129_085730.png' target='_blank'><img src='screenshots/I_click_on_login_button_20250129_085730.png' width='100'></a></td>
+        </tr>
+        
+        <tr>
+            <td>I should see the dashboard</td>
+            <td class="passed">PASSED</td>
+            <td><a href='screenshots/I_should_see_the_dashboard_20250129_085733.png' target='_blank'><img src='screenshots/I_should_see_the_dashboard_20250129_085733.png' width='100'></a></td>
+        </tr>
+        </tbody></table></body></html>
